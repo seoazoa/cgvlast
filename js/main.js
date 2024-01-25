@@ -20,36 +20,41 @@ $(document).ready(function () {
     });
   }
   // 상단메뉴
-  window.onscroll = function() {scrollFunction()};
+  window.onscroll = function () {
+    scrollFunction();
+  };
 
   function scrollFunction() {
     var navbar = document.querySelector(".fixed-nav-wrap");
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    if (
+      document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop > 200
+    ) {
       navbar.style.visibility = "visible";
     } else {
       navbar.style.visibility = "hidden";
     }
   }
-$(document).ready(function() {
-  // 이미지 경로를 저장하는 객체
-  var imagePaths = {
-    "SUITE CINEMA": "images/호텔컨셉.png",
-    "CINE & LIVINGROOM": "images/신개념.png",
-    "4DX": "images/모션시트.png",
-    "CINE de CHEF": "images/쉐프있음.png"
-  };
+  $(document).ready(function () {
+    // 이미지 경로를 저장하는 객체
+    var imagePaths = {
+      "SUITE CINEMA": "images/호텔컨셉.png",
+      "CINE & LIVINGROOM": "images/신개념.png",
+      "4DX": "images/모션시트.png",
+      "CINE de CHEF": "images/쉐프있음.png",
+    };
 
-  $('.specialhall-list li').on('mouseover', function() {
-    // 메뉴 아이템의 이름을 가져옴
-    var itemName = $(this).find('strong').text();
+    $(".specialhall-list li").on("mouseover", function () {
+      // 메뉴 아이템의 이름을 가져옴
+      var itemName = $(this).find("strong").text();
 
-    // 이미지 경로를 가져옴
-    var imgSrc = imagePaths[itemName];
+      // 이미지 경로를 가져옴
+      var imgSrc = imagePaths[itemName];
 
-    // 이미지를 변경함
-    $('.specialhall-content img').attr('src', imgSrc);
+      // 이미지를 변경함
+      $(".specialhall-content img").attr("src", imgSrc);
+    });
   });
-});
   var swiper = new Swiper(".movieSwiper", {
     direction: "horizontal",
     // loop:true,

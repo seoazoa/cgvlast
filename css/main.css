@@ -722,9 +722,9 @@ object-fit: contain;
   padding-left: 30px;
   font-family: "Noto Sans KR", sans-serif;
 }
-.specialhall-content  > a > img{
-width: 474px;
-height:267px;
+.specialhall-content > a > img {
+  width: 474px;
+  height: 267px;
 }
 .specialhall-list li {
   border: 1px solid transparent;
@@ -1100,7 +1100,7 @@ option {
 }
 .top-button .chat-btn img {
   position: absolute;
-  right: 8px;
+  right: -250px;
   bottom: 100px;
   top: 14px;
   width: 130px;
@@ -1110,7 +1110,7 @@ option {
   background-color: #ffffff;
   position: relative;
   bottom: 0px;
-  right: -40px;
+  right: -300px;
   width: 48px;
   height: 48px;
   line-height: 50px;
@@ -1128,7 +1128,7 @@ option {
   background-color: #ffffff;
   position: relative;
   bottom: 58px;
-  right: -112px;
+  right: -370px;
   width: 48px;
   height: 48px;
   line-height: 50px;
@@ -1166,7 +1166,7 @@ option {
 }
 
 /* 상단메뉴 */
-.fixed-nav-wrap{
+.fixed-nav-wrap {
   position: fixed;
   display: flex;
   top: 0;
@@ -1185,19 +1185,18 @@ option {
   justify-content: center;
 }
 
-.fixed-nav-content{
+.fixed-nav-content {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 100px;
   height: 80px;
 }
-.fixed-nav-content img{
+.fixed-nav-content img {
   width: 60px;
-  
 }
-.fixed-logo a{
-  display:block;
+.fixed-logo a {
+  display: block;
 }
 .fixed-nav-content {
   display: flex;
