@@ -9,40 +9,39 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
-    
+
     <!-- js적용 -->
     <!-- swiper 적용 -->
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- jquery 적용 -->
     <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js""></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
-    
   </head>
   <body>
     <!-- top botton -->
     <div class="top-button">
       <a href="#" class="chat-btn">
-        <img src="images/예매하기.png" alt="예매버튼">
-    </a>
+        <img src="images/예매하기.png" alt="예매버튼" />
+      </a>
       <a href="#" class="top-btn" id="top-btn">
-          <img src="/images/up_arrow_icon.png" alt="btn" id="top-btn-img">
+        <img src="/images/up_arrow_icon.png" alt="btn" id="top-btn-img" />
       </a>
       <a href="#" class="bottom-btn" id="bottom-btn">
-        <img src="/images/up_arrow_icon.png" alt="btn" id="bottom-btn-img">
-    </a>
-  </div>
-  <!-- 배너 -->
+        <img src="/images/up_arrow_icon.png" alt="btn" id="bottom-btn-img" />
+      </a>
+    </div>
+    <!-- 배너 -->
     <div class="banner">
       <a href="#"></a>
     </div>
-  <!-- 전체 레이아웃 -->
+    <!-- 전체 레이아웃 -->
     <div class="container">
-      <div class="header inner"">
+      <div class="header inner">
         <div class="header-content inner">
           <div class="logo">
             <a href="#"> <img src="images/cgv로고.png" alt="더보기" /></a>
@@ -70,12 +69,11 @@
           </ul>
         </div>
         <div class="nav">
-          <div class="nav-content ">
-            <ul class="gnb inner" >
+          <div class="nav-content">
+            <ul class="gnb inner">
               <li>
                 <h2><a href="#">영화</a></h2>
                 <ul class="depth2">
-                 
                   <li><a href="#">무비차트</a></li>
                   <li><a href="#">아트하우스</a></li>
                   <li><a href="#">ICECON</a></li>
@@ -84,7 +82,6 @@
               <li>
                 <h2><a href="#">극장</a></h2>
                 <ul class="depth2">
-                  
                   <li><a href="#">CGV 극장</a></li>
                   <li><a href="#">특별관</a></li>
                 </ul>
@@ -92,7 +89,6 @@
               <li>
                 <h2><a href="#">예매</a></h2>
                 <ul class="depth2">
-                  
                   <li><a href="#">빠른예매</a></li>
                   <li><a href="#">English Ticketing</a></li>
                   <li><a href="#">English Schedule</a></li>
@@ -101,7 +97,6 @@
               <li>
                 <h2><a href="#">스토어</a></h2>
                 <ul class="depth2">
-                 
                   <li><a href="#">패키지</a></li>
                   <li><a href="#">영화관람권</a></li>
                   <li><a href="#">기프트카드</a></li>
@@ -116,7 +111,6 @@
               <li>
                 <h2><a href="#">이벤트</a></h2>
                 <ul class="depth2">
-                
                   <li><a href="#">SPECIAL</a></li>
                   <li><a href="#">영화/예매</a></li>
                   <li><a href="#">멤버십/CLUB</a></li>
@@ -129,7 +123,6 @@
               <li>
                 <h2><a href="#">혜택</a></h2>
                 <ul class="depth2">
-                  
                   <li><a href="#">CGV 할인정보</a></li>
                   <li><a href="#">CLUB 서비스</a></li>
                   <li><a href="#">VIP 라운지</a></li>
@@ -138,8 +131,7 @@
             </ul>
             <div class="totalSearch-wrap">
               <label for="totalSearch inner">
-                <input type="text" id="header-keyword" value />
-        
+                <input type="text" id="header-keyword" />
               </label>
               <button type="button" class="btn-totalSearch">검색</button>
             </div>
@@ -149,21 +141,21 @@
       </div>
     </div>
     <script>
- const gnb = document.querySelector('.gnb');
-  const depth2 = document.querySelector('.depth2');
-  const navHover = document.querySelector('.nav-hover');
+      const gnb = document.querySelector(".gnb");
+      const depth2 = document.querySelector(".depth2");
+      const navHover = document.querySelector(".nav-hover");
 
-  // 마우스 진입 이벤트에 대한 이벤트 리스너
-  gnb.addEventListener('mouseenter', function () {
-    depth2.style.display = 'block';
-    navHover.style.display = 'block';
-  });
+      // 마우스 진입 이벤트에 대한 이벤트 리스너
+      gnb.addEventListener("mouseenter", function () {
+        depth2.style.display = "block";
+        navHover.style.display = "block";
+      });
 
-  // 마우스 이탈 이벤트에 대한 이벤트 리스너
-  gnb.addEventListener('mouseleave', function () {
-    depth2.style.display = 'none';
-    navHover.style.display = 'none';
-  });
+      // 마우스 이탈 이벤트에 대한 이벤트 리스너
+      gnb.addEventListener("mouseleave", function () {
+        depth2.style.display = "none";
+        navHover.style.display = "none";
+      });
     </script>
     <!-- 비디오 -->
     <div class="movieselection-wrap">
@@ -191,11 +183,11 @@
       </div>
     </div>
     <script>
-      const video = document.querySelector('.video-wrap video');
-video.addEventListener('ended', function() {
-  video.currentTime = 0;
-  video.play();
-});
+      const video = document.querySelector(".video-wrap video");
+      video.addEventListener("ended", function () {
+        video.currentTime = 0;
+        video.play();
+      });
     </script>
     <!-- 무비차트 -->
     <div class="movieChart-wrap">
@@ -394,8 +386,8 @@ video.addEventListener('ended', function() {
             </div>
           </div>
           <div class="specialhall-content">
-            <a href="#"><img src="images/호텔컨셉.png" alt="사진"/></a>
-            
+            <a href="#"><img src="images/호텔컨셉.png" alt="사진" /></a>
+
             <ul class="specialhall-list">
               <li>
                 <a href="#">
@@ -676,32 +668,28 @@ video.addEventListener('ended', function() {
       </div>
       <div class="fixed-nav-wrap">
         <div class="fixed-nav-content">
-          <a href="#"><img src="images/logoWhite.png" alt="로고"></a>
+          <a href="#"><img src="images/logoWhite.png" alt="로고" /></a>
         </div>
-          <ul class="fixed-nav" >
-            <li>
-              <h2><a href="#">영화</a></h2>
-            </li>
-            <li>
-              <h2><a href="#">극장</a></h2>
-            </li>
-            <li>
-              <h2><a href="#">예매</a></h2>
-            </li>
-            <li>
-              <h2><a href="#">스토어</a></h2>
-            </li>
-            <li>
-              <h2><a href="#">이벤트</a></h2>
-            </li>
-            <li>
-              <h2><a href="#">혜택</a></h2>
-            </li>
-          </ul>
-        
-        </div>
-      </div>
-        </div>
+        <ul class="fixed-nav">
+          <li>
+            <h2><a href="#">영화</a></h2>
+          </li>
+          <li>
+            <h2><a href="#">극장</a></h2>
+          </li>
+          <li>
+            <h2><a href="#">예매</a></h2>
+          </li>
+          <li>
+            <h2><a href="#">스토어</a></h2>
+          </li>
+          <li>
+            <h2><a href="#">이벤트</a></h2>
+          </li>
+          <li>
+            <h2><a href="#">혜택</a></h2>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
